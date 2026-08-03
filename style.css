@@ -182,22 +182,6 @@ nav ul li a:hover{
 
 }
 
-.hero-image{
-
-    width:350px;
-
-}
-
-.hero-image img{
-
-    border-radius:50%;
-
-    border:6px solid white;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
-
-}
-
 .about{
 
     width:85%;
