@@ -2,124 +2,442 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Varun Bhogaraju | Portfolio</title>
-    <style>
-         { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { background: #f4f4f9; color: #333; line-height: 1.6; }
-        header { background: #333; color: #fff; padding: 15px 20px; text-align: center; }
-        header h1 { font-size: 2em; }
-        nav ul { list-style: none; margin-top: 10px; }
-        nav ul li { display: inline; margin: 0 15px; }
-        nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
-        nav ul li a:hover { color: #ff9800; }
-
-        section { padding: 50px 20px; max-width: 900px; margin: auto; }
-        h2 { margin-bottom: 20px; color: #222; text-align: center; }
-        p { margin-bottom: 15px; text-align: center; }
-
-        .card { background: #fff; padding: 20px; margin: 15px 0; border-radius: 10px;
-                box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-
-        footer { background: #333; color: #fff; text-align: center; padding: 20px; }
-        footer a { color: #ff9800; text-decoration: none; }
-    </style>
+    <link rel="stylesheet"href="style.css">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Varun Bhogaraju</h1>
-        <nav>
+    <nav>
+    <div class="logo">
+        Varun.
+    </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">About</a></li>
+
+        <li><a href="#">Skills</a></li>
+
+        <li><a href="#">Projects</a></li>
+
+        <li><a href="#">Education</a></li>
+
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+
+</nav>
+<section class="hero">
+
+<div class="hero-text">
+
+<h3>Hello, I'm</h3>
+
+<h1>Naga Surya Sai Varun Bhogaraju</h1>
+
+<h2>Python Backend Developer</h2>
+
+<p>
+
+Computer Science graduate passionate about
+Backend Development,
+Cloud Engineering
+and AI Applications.
+
+</p>
+
+<div class="buttons">
+
+<a href="#projects" class="btn">
+
+Projects
+
+</a>
+
+<a href="https://drive.google.com/file/d/1VH4QErLEiaqQS8e3dMLqMJ3FIIUfmORu/view?usp=drivesdk"
+class="btn2"
+download>
+
+Download Resume
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/profile.jpg">
+
+</div>
+
+</section>
+<section class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a Computer Science graduate passionate about backend development,
+        REST APIs, cloud technologies, and AI-powered applications.
+        I enjoy solving real-world problems by building scalable applications
+        using Python, FastAPI, MySQL, and modern backend technologies.
+    </p>
+
+</section>
+<section class="skills" id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <p class="section-subtitle">
+        Technologies and tools I use to build backend applications.
+    </p>
+
+    <div class="skills-container">
+
+        <div class="card">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+        </div>
+
+        <div class="card">
+            <i class="fab fa-java"></i>
+            <h3>Java</h3>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-database"></i>
+            <h3>MySQL</h3>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-server"></i>
+            <h3>FastAPI</h3>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-network-wired"></i>
+            <h3>REST APIs</h3>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-cloud"></i>
+            <h3>AWS</h3>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-brain"></i>
+            <h3>OpenAI API</h3>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Git</h3>
+        </div>
+
+        <div class="card">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-leaf"></i>
+            <h3>MongoDB</h3>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-microchip"></i>
+            <h3>Microservices</h3>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Problem Solving</h3>
+        </div>
+
+    </div>
+
+</section>
+<section class="projects" id="projects">
+
+    <h2>Projects</h2>
+
+    <p class="section-subtitle">
+        Some of the projects I have worked on during my academic journey.
+    </p>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+
+            <h3>AI Resume Screener & Job Match API</h3>
+
+            <p class="project-tech">
+                Python | FastAPI | OpenAI API | MySQL | React JS
+            </p>
+
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    Built a FastAPI microservice integrating the OpenAI GPT API to parse resumes and generate a match score against job descriptions.
+                </li>
+
+                <li>
+                    Designed a MySQL database schema for candidate and job data, and implemented REST endpoints for resume upload and score retrieval.
+                </li>
+
+                <li>
+                    Developed a React JS frontend for uploading resumes and viewing match results.
+                </li>
+
             </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm <strong>Varun Bhogaraju</strong>, a passionate final-year B.Tech Computer Science student 
-           with interests in <strong>UI/UX design, software development, cybersecurity, and Python development</strong>. 
-           I enjoy creating user-friendly applications, solving problems, and exploring secure, scalable solutions 
-           in modern technologies. Known for quick learning, teamwork, and strong communication skills.</p>
-    </section>
-    <section id="education">
-        <h2>Educational Qualifications</h2>
-        <div class="card">
-            <h3>B.Tech in Computer Science Engineering</h3>
-            <p>Swarnandhra College of Engineering & Technology | 2022 - Present</p>
-            <p>CGPA: 7.55/10</p>
+
         </div>
-       
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="card">
-            <h3>Languages</h3>
-            <p>Java, Python, Data Structures & Algorithms (Python)</p>
+
+        <div class="project-card">
+
+            <h3>Real-Time Analytics Dashboard</h3>
+
+            <p class="project-tech">
+                Python | FastAPI | MySQL | React JS
+            </p>
+
+            <ul>
+
+                <li>
+                    Built a full-stack dashboard to track and visualize event data using FastAPI and React JS.
+                </li>
+
+                <li>
+                    Developed REST endpoints for event ingestion and aggregation, and applied SQL indexing to improve query performance.
+                </li>
+
+                <li>
+                    Implemented WebSocket-based updates to refresh dashboard metrics without manual polling.
+                </li>
+
+            </ul>
+
         </div>
-        <div class="card">
-            <h3>Web Development</h3>
-            <p>HTML, CSS, JavaScript, React.js</p>
+
+        <div class="project-card">
+
+            <h3>INVYRA – Inventory & Stock Control System</h3>
+
+            <p class="project-tech">
+                Java | JSP | Servlets | Derby DB | GlassFish Server
+            </p>
+
+            <ul>
+
+                <li>
+                    Built a full-stack inventory management application supporting CRUD operations for products, categories, and stock levels.
+                </li>
+
+                <li>
+                    Implemented role-based login for admin and staff users with session management using a normalized Derby DB schema.
+                </li>
+
+                <li>
+                    Deployed the application on GlassFish Server and performed functional testing to verify data integrity and core business logic.
+                </li>
+
+                <li>
+                    Prepared user documentation and gathered peer feedback through UAT sessions before final submission.
+                </li>
+
+            </ul>
+
         </div>
-        <div class="card">
-            <h3>Databases</h3>
-            <p>MySQL, MongoDB</p>
-        </div>
-        <div class="card">
-            <h3>Core Competencies</h3>
-            <p>Active Listening, Public Speaking, Teamwork & Collaboration, 
-               Problem Solving, Strong Communication</p>
-        </div>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>Website for Local Cloth Merchants</h3>
-            <p>Connected local vendors with the community via a web platform.</p>
-            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-            <a href="https://palakolclothmart.netlify.app/" target="_blank">View Project</a>
-        </div>
-        <div class="card">
-            <h3>Medical Inventory Management</h3>
-            <p>Developed on Salesforce CRM using Apex triggers, Lightning App Builder, and Flows 
-               to automate inventory management with validation rules and dashboards.</p>
-            <p><strong>Tech:</strong> Salesforce CRM</p>
-        </div>
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>A personal website to showcase my skills, education, and projects using HTML & CSS.</p>
-        </div>
-    </section>
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="card">
-            <p><strong>Cloud Computing</strong> – NPTEL (IIT Kharagpur)</p>
-            <a href="https://drive.google.com/file/d/11MjedXsbWFa4HUivK0L4dsM-mOm679ST/view?usp=sharing" target="_blank">View Certificate</a>
-        </div>
-        <div class="card">
-            <p><strong>Altair Data Science</strong> – Eduskills</p>
-            <a href="https://drive.google.com/file/d/1SfaZG7n111YkkZskdVBVfhmLuGv4fSd7/view?usp=sharing" target="_blank">View Certificate</a>
-        </div>
-        <div class="card">
-            <p><strong>Salesforce Developer</strong> – SmartBridge</p>
-            <a href="https://drive.google.com/file/d/1VyvtoWL99krm_EMRSpXwIin1YKbNS_SO/view?usp=sharing" target="_blank">View Certificate</a>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:varunbhogaraju@gmail.com">varunbhogaraju@gmail.com</a></p>
-        <p>Phone: +91-7981829301</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/varun-bhogaraju" target="_blank">linkedin.com/in/varun-bhogaraju</a>
-        </p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Varun Bhogaraju | All Rights Reserved</p>
-    </footer>
+
+    </div>
+
+</section>
+
+<section class="internship" id="internship">
+
+    <h2>Internship Experience</h2>
+
+    <p class="section-subtitle">
+        Practical experience gained during my Salesforce Developer Virtual Internship.
+    </p>
+
+    <div class="internship-card">
+
+        <h3>Salesforce Developer Virtual Intern</h3>
+
+        <span class="company">
+            APSCHE – SmartBridge
+        </span>
+
+        <span class="duration">
+            Duration: 2 Months
+        </span>
+
+        <ul>
+
+            <li>
+                Developed a Medical Inventory Management System using Salesforce CRM.
+            </li>
+
+            <li>
+                Worked with Salesforce objects, workflows and data management.
+            </li>
+
+            <li>
+                Gained hands-on exposure to cloud-based CRM development and application customization.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+<section class="education" id="education">
+
+    <h2>Education</h2>
+
+    <p class="section-subtitle">
+        My academic background.
+    </p>
+
+    <div class="education-card">
+
+        <h3>B.Tech - Computer Science Engineering</h3>
+
+        <p>Swarnandhra College of Engineering & Technology</p>
+
+        <span>2022 – 2026 | CGPA: 7.67 / 10</span>
+
+    </div>
+
+    <div class="education-card">
+
+        <h3>Intermediate (MPC)</h3>
+
+        <p>Sri Chaitanya Junior College</p>
+
+        <span>2020 – 2022 | Score: 62%</span>
+
+    </div>
+
+    <div class="education-card">
+
+        <h3>SSC</h3>
+
+        <p>Sri Chaitanya Techno School</p>
+
+        <span>2020 | Score: 83%</span>
+
+    </div>
+
+</section>
+<section class="achievements" id="achievements">
+
+<h2>Achievements</h2>
+
+<p class="section-subtitle">
+Highlights from my academic and technical journey.
+</p>
+
+<div class="achievement-card">
+
+<ul>
+
+<li>Solved 100+ problems on LeetCode and going on.</li>
+
+<li>Smart India Hackathon 2025 Qualifier, At the College Level among the top 50 of about 250 teams.</li>
+
+<li>Strong foundation in Data Structures and Algorithms.</li>
+
+</ul>
+
+</div>
+
+</section>
+<section class="certifications" id="certifications">
+
+<h2>Certifications</h2>
+
+<p class="section-subtitle">
+
+AWS AI Practitioner
+
+<br><br>
+
+ServiceNow Certified Implementation Specialist
+
+<br><br>
+
+NPTEL Cloud Computing
+
+<br><br>
+
+EduSkills Python Full Stack Developer
+
+</p>
+
+</section>
+<section class="contact" id="contact">
+
+<h2>Contact</h2>
+
+<p class="section-subtitle">
+
+Feel free to connect with me.
+
+</p>
+
+<div class="contact-details">
+
+<p>
+
+<i class="fas fa-envelope"></i>
+
+varunbhogaraju@gmail.com
+
+</p>
+
+<p>
+
+<i class="fas fa-phone"></i>
+
++91-7981829301
+
+</p>
+
+<p>
+
+<i class="fab fa-linkedin"></i>
+
+linkedin.com/in/varun-bhogaraju
+
+</p>
+
+<p>
+
+<i class="fab fa-github"></i>
+
+github.com/varunbhogaraju
+
+</p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
-</html>
 
+</html>
